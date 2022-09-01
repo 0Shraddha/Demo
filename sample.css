@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  body{
+  overflow-x: hidden;
+    
+  }
+  .art{
+      border: 1px solid #E6373C;
+      padding: 20px 100px;
+    }
+    .art-details{
+      display: flex;
+      margin: 10px 120px 10px 195px;
+      justify-content: center;
+    
+    }
+    .images img{
+      object-fit: cover !important;
+    }
+    .art img{
+      width: 350px;
+      height: 400px;
+      object-fit: contain;
+    }
+    .art-text{
+      margin-left: 20px;
+    }
+    .art-text h5,.art-text h4, .art-text h1, .art-text p{
+      margin: 10px;
+    }
+    
+    h6 a{
+      color: #333;
+    }
+    h6 a:hover{
+      cursor: pointer;
+      color: #E6373C;
+    }
+    
+    
+    
+    .cart button {
+    
+      outline: 0;
+      border: 0;
+      background: none;
+      border: 1px solid #d9d9d9;
+      padding: 8px 0px;
+      margin-top: 5px;
+      color: #333;
+      text-transform: uppercase;
+      width: 125px;
+    
+      margin-right: 5px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+    .cart button:hover {
+        background-color: #fff;
+        border: 1px solid #E6373C;
+        color: #E6373C;
+        cursor: pointer;
+        
+      }
+    .images{
+      height: 10px;
+    }
+    .slider{
+      width: 40%;
+      position: relative;
+      left: 195px;
+      top: -10px;
+      padding:0 5px;
+      object-fit: contain;
+    }
+      .slider li{
+        width: 500px; 
+        height: 150px;
+        color: #333;
+        margin: 10px;
+        animation: scrolling 25s linear infinite;
+      }
+      
+      @keyframes scrolling{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translate(-180vw);
+        }
+      }
+    .slider .prev-arrow{
+      position: absolute;
+      top: 80px;
+      right: 100%;
+      color: #E6373C;
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #E6373C;
+      text-align: center;
+       line-height: 22px;
+       cursor: pointer;
+    }
+    .slider img{
+     width: 150px;
+     height: 150px;
+     object-fit: cover;
+    }
+    .slider .next-arrow{
+      position: absolute;
+      top: 80px;
+      left: 100%;
+      color: #E6373C;
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #E6373C;
+      text-align: center;
+       line-height: 22px;
+       cursor: pointer;
+    }
+    
